@@ -1,20 +1,20 @@
 # Task-4-ROS
-Install the necessary packages (if not already installed):
+Install the necessary packages 
 
-sh
+
 
 sudo apt-get install ros-noetic-turtlesim
 Create a single script to launch everything:
 
 Create a file named start_turtle.sh:
 
-sh
+
 
 touch start_turtle.sh
 chmod +x start_turtle.sh
 Edit start_turtle.sh to include the following content:
 
-sh
+
 
 #!/bin/bash
 # Source ROS setup
