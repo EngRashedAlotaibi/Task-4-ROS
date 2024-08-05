@@ -17,28 +17,28 @@ Edit start_turtle.sh to include the following content:
 
 
 #!/bin/bash
-# Source ROS setup
+#Source ROS setup
 
 source /opt/ros/noetic/setup.bash
 
 source ~/catkin_ws/devel/setup.bash
 
 
-# Start roscore
+#Start roscore
 
 gnome-terminal -- bash -c "roscore" &
 
 
-# Wait for roscore to start
+ #Wait for roscore to start
 
 sleep 2
 
-# Start turtlesim node
+#Start turtlesim node
 
 gnome-terminal -- bash -c "rosrun turtlesim turtlesim_node" &
 
 
-# Start turtle teleop key
+#Start turtle teleop key
 
 gnome-terminal -- bash -c "rosrun turtlesim turtle_teleop_key"
 
